@@ -14,6 +14,7 @@ gem "therubyracer"
 gem "less-rails" 
 gem "twitter-bootstrap-rails"
 
+gem "ffaker"
 
 gem 'coffee-rails', '~> 4.0.0'
 
