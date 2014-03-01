@@ -16,8 +16,15 @@
 
 body {
   font-family:"Didot";
-  background-color:AliceBlue;
-  color:#778899;
+  background: url(http://myseosolutions.com/wp-content/uploads/2011/05/lost_in_the_crowd.jpg) no-repeat center center fixed; 
+  color:#708090;
   font-size: 18px;
-  text-align: center;
+}
+
+.form {
+    background:rgba(321, 321, 321, 0.6);
+    padding: 1em;
+    margin: 0;
+    font-size: 16px;
+    color: #777;
 }
