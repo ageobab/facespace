@@ -17,9 +17,10 @@ gem "less-rails"
 gem "twitter-bootstrap-rails"
 
 
-  group :development do 
-    gem "ffaker"
-  end
+group :development do 
+  gem "ffaker"
+  gem "letter_opener"
+end
 
 gem 'coffee-rails', '~> 4.0.0'
 

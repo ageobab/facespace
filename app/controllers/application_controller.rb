@@ -11,8 +11,12 @@ before_filter :configure_permitted_parameters, if: :devise_controller?
     devise_parameter_sanitizer.for(:sign_up) << :username
   end
 
+
   def after_sign_in_path_for(resource)
     users_path
   end
+
+
+
 
 end
