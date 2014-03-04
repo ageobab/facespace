@@ -8,4 +8,15 @@ class UserMailer < ActionMailer::Base
     mail(to: @user.email, subject: "Welcome to the Space of Faces")
   end
 
+  def marketing(user)
+    @user = user
+    mail(to: @user.email, subject: "Check out our new deals of the month!")
+  end
+
+  def update_info(user)
+    @user = user
+    mail(to: @user.email, subject: "Are you alive")
+  end
+
+
 end
