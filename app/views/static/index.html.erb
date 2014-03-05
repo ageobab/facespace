@@ -4,6 +4,10 @@
 <br>
 <h4> The Creepiest Social Network </h4>
 <br>
-<p> Want to meet some people near you? <%= link_to "Sign-Up", new_user_registration_path  %> </p>
+<p> Get in the Know </p>
+<%= form_tag(newsletter_path, method: "post") do %>
+  <%= email_field_tag(:email," ",placeholder: "Email") %><br>
+  <%= submit_tag("Say Aye") %>
+<% end %>
 
 </div>

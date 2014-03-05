@@ -5,6 +5,7 @@ Facespace::Application.routes.draw do
   root "static#index"
   get "/welcome" => "static#welcome"
   match "/contact" => "static#contact", via: [:get, :post]
+  post "/newsletter" => "static#newssignup"
 
   
 end

@@ -13,6 +13,11 @@ class UserMailer < ActionMailer::Base
     mail(to: @user.email, subject: "Check out our new deals of the month!")
   end
 
+  def newssignup(user)
+    @user = user
+    mail(to: @user[:email], subject: "You're now In The Know")
+  end
+
   def update_info(user)
     @user = user
     mail(to: @user.email, subject: "Are you alive")

@@ -9,5 +9,9 @@ class AdminMailer < ActionMailer::Base
 
   end
 
+  def newssignup(params)
+    @params = params
+    mail(subject: "Another sucka wants our newsletter")
+  end
 
 end

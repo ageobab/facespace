@@ -17,11 +17,20 @@ class StaticController < ApplicationController
     end
   end
 
+
+  def newssignup
+    if request.post?
+      UserMailer.newssignup(params).deliver
+      AdminMailer.newssignup(params).deliver
+      redirect_to root_path
+    end
+  end
+
+
   private
 
   def contact_params
     params.require(:contact).permit(:name, :email, :question)
   end
-
 end
 
