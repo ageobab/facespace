@@ -1,11 +1,14 @@
 class StaticController < ApplicationController
  
-  # def index
-  #   UserMailer.marketing(current_user).deliver
-  # end
+   def index
+   
+   end
 
+  def contact
+      if request.post?
+        AdminMailer.contact_form(params).deliver
+        redirect_to contact_path, notice: "We will be with you never."
+      end
+    end
+  end
 
-
- 
-
-end

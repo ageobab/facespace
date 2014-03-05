@@ -1,0 +1,9 @@
+<h1 class = "page-header"> contact us </h1>
+
+
+<%= form_tag(contact_path) do %>
+  <%= text_field_tag(:name, "", placeholder: "Name") %> <br>
+  <%= email_field_tag(:email, "", placeholder: "Email") %><br>
+  <%= text_field_tag(:question, "", placeholder: "Question") %><br>
+  <%= submit_tag("Say Aye") %>
+<% end %>
